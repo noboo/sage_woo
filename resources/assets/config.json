@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/your-theme-name",
-  "devUrl": "http://your-theme-name.test",
+  "publicPath": "/app/themes/sage_woo",
+  "devUrl": "https://info.digitalbath.jp.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

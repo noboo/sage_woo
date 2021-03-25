@@ -2,9 +2,33 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: royalblue,
 );
 
-/** Bootstrap navbar fix (https://git.io/fADqW) */
+//Bootstrap
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+  Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+) !default;
+
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 1.5 !default;
+$h2-font-size: $font-size-base * 1.5 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// animate css
+$use-fadeIn: true;
+$use-fadeOut: true;

@@ -29,14 +29,18 @@
   "autoload": {
     "psr-4": {
       "App\\": "app/"
-    }
+    },
+    "files": [
+      "src/woocommerce.php"
+  ]
   },
   "require": {
     "php": ">=7.1",
     "composer/installers": "~1.9",
     "illuminate/support": "5.6.*",
     "roots/sage-lib": "~9.0.9",
-    "soberwp/controller": "~2.1.0"
+    "soberwp/controller": "~2.1.0",
+    "roots/sage-woocommerce": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8.0",

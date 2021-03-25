@@ -32,6 +32,13 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
+    /**
+   * Add Woocommerce Support
+   */
+    add_theme_support('woocommerce', array(
+    'thumbnail_image_width' => 415,
+  ));
+
 
     /**
      * Enable plugins to manage the document title
@@ -44,7 +51,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'mobile_navigation' => __('Mobile Navigation', 'sage')
     ]);
 
     /**
@@ -82,6 +90,10 @@ add_action('widgets_init', function () {
         'before_title'  => '<h3>',
         'after_title'   => '</h3>'
     ];
+    register_sidebar([
+        'name'          => __('Header', 'sage'),
+        'id'            => 'sidebar-header'
+    ] + $config);
     register_sidebar([
         'name'          => __('Primary', 'sage'),
         'id'            => 'sidebar-primary'
